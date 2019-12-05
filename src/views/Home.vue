@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <p>Welcome to my homepage / portfolio.</p>
+    <p>
+      This is a collection of projects and interesting things I've worked on so
+      far, plus an excuse to learn much more about my Raspberry Pi (where this
+      hosted) and Vue (the current server).
+    </p>
+    <p>
+      I'm currently enrolled in General Assembly's Software Immersive programme,
+      learning full-stack web development with a hope to code for a living once
+      I graduate.
+    </p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
