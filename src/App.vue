@@ -10,6 +10,7 @@
 
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/pimonitor">Pi Monitor</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/piroku">Pi-roku, amnesiatic webhosting</router-link> |
       <a href="/cat-game">JS Cat Game</a>
