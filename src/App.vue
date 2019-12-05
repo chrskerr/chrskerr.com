@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <nav id="title">
-      <div id="title_container">
+    <nav id="top">
+      <div id="text_container">
         <h1>Chris Kerr</h1>
         <h2>Jnr Developer</h2>
       </div>
@@ -25,7 +25,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin: 0 4em 0 8em;
+  margin: 2em 4em 0 8em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,23 +50,23 @@
 /* CSS for the top row */
 #headshot {
   border-radius: 100%;
-  margin: 0 1em;
+  margin: 0 3em;
   max-width: 250px;
   max-height: 250px;
 }
 
-#title {
+#top {
   display: flex;
 }
 
 @media only screen and (max-width: 705px) {
-  #title {
+  #top {
     flex-direction: column-reverse;
     align-items: center;
   }
 }
 
-#title_container {
+#text_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
