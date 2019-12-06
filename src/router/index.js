@@ -16,35 +16,32 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
     path: "/pimonitor",
     name: "pimonitor",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Pimonitor.vue")
+    component: () => import("../views/Pimonitor.vue")
   },
   {
     path: "/piroku",
     name: "piroku",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "piroku" */ "../views/Piroku.vue")
+    component: () => import("../views/Piroku.vue")
   },
   {
     path: "/piroku/console",
     name: "piroku-console",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "piroku" */ "../views/PirokuConsole.vue")
+    component: () => import("../views/PirokuConsole.vue")
+  },
+  {
+    path: "/tictactoe",
+    name: "tictactoe",
+    component: () => import("../views/TicTacToe.vue")
+  },
+  {
+    path: "/catgame",
+    name: "catgame",
+    component: () => import("../views/CatGame.vue")
   }
 ];
 

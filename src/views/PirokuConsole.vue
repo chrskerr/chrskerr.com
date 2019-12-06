@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  input {
-    width: 350px;
+  #nav { 
+    padding: 0px
   }
 </style>

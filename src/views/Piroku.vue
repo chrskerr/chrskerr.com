@@ -17,14 +17,22 @@
     <input id="url_field" v-on:input="onUrlType" placeholder="https://www.github.com/ $something / $repo .git"/>
     <p v-if=(!status)>{{ url }}</p>
     <div v-if=(status)>
-      <p>$ git clone {{ url }}</p>
-
+      
+      <p>Generated command:</p>
+      <output>
+        <span>$ git clone {{ url }}</span>
+      </output>
+      
       <button>Create Server</button>
     </div>
   </div>
 </template>
 
+
+
 <script>
+import _ from 'lodash';
+
 export default {
   name: "piroku",
   data() {
@@ -34,7 +42,7 @@ export default {
       }
   },
   methods: {
-    onUrlType: function (e) {
+    onUrlType: _.debounce(function (e) {
       if (e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*\.gi(t|t\/)$/)) {
         this.status = true;
         this.url = e.target.value;
@@ -45,13 +53,19 @@ export default {
         this.status = false;
         this.url = "please enter a GitHub URL";
       }
-    }
-  }
+    }, 1000)
+  },
 };
 </script>
+
+
 
 <style scoped>
   input {
     width: 350px;
+  }
+
+  #nav { 
+    padding: 0px
   }
 </style>

@@ -13,7 +13,8 @@
       <router-link to="/pimonitor">Pi Monitor</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link id='has_depth' to="/piroku">Pi-roku, amnesiatic webhosting</router-link> |
-      <a href="/cat-game">JS Cat Game</a>
+      <router-link to="/catgame">JS Cat Game</router-link> |
+      <router-link to="/tictactoe">Tic Tac Toe</router-link>
     </div>
 
     <router-view />
@@ -36,7 +37,7 @@
 }
 
 #nav {
-  padding: 30px 0px;
+  padding: 30px 0px 15px 0px;
 }
 
 #nav a {
