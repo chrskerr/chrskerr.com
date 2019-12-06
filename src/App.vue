@@ -12,7 +12,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/pimonitor">Pi Monitor</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/piroku">Pi-roku, amnesiatic webhosting</router-link> |
+      <router-link id='has_depth' to="/piroku">Pi-roku, amnesiatic webhosting</router-link> |
       <a href="/cat-game">JS Cat Game</a>
     </div>
 
@@ -45,6 +45,10 @@
 }
 
 #nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+a.router-link-active#has_depth {
   color: #42b983;
 }
 
