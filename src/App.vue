@@ -14,7 +14,9 @@
       <router-link to="/about">About</router-link> |
       <router-link id='has_depth' to="/piroku">Pi-roku, amnesiatic webhosting</router-link> |
       <router-link to="/catgame">JS Cat Game</router-link> |
-      <router-link to="/tictactoe">Tic Tac Toe</router-link>
+      <router-link to="/tictactoe">Tic Tac Toe</router-link> | 
+      <router-link to="/projectone">File Upload / Instant Messaging</router-link> | 
+      <router-link to="/basicflights">Basic Flight Booker</router-link>
     </div>
 
     <router-view />

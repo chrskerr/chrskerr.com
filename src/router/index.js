@@ -42,6 +42,16 @@ const routes = [
     path: "/catgame",
     name: "catgame",
     component: () => import("../views/CatGame.vue")
+  },
+  {
+    path: "/projectone",
+    name: "projectone",
+    component: () => import("../views/ProjectOne.vue")
+  },
+  {
+    path: "/basicflights",
+    name: "basicflights",
+    component: () => import("../views/BasicFlights.vue")
   }
 ];
 
