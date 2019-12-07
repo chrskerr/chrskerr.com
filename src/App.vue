@@ -16,6 +16,12 @@
     </div>
 
     <router-view />
+
+    <footer>
+      <a href="https://www.github.com/chrskerr" target="_blank">https://www.github.com/chrskerr</a>
+      <p>-</p>
+      <a href="https://www.linkedin.com/in/chrskerr" target="_blank">https://www.linkedin.com/in/chrskerr</a>
+    </footer>
   </div>
 </template>
 
@@ -74,5 +80,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+footer {
+  font-size: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  margin: 0px 2em;
 }
 </style>
