@@ -1,5 +1,7 @@
 <template>
     <div id='projectone'>
+        <project-nav />
+
         <div>
             <a href='https://github.com/chrskerr/ProjectOne' target="_blank">File Sharing / Instant Messaging (GitHub repo)</a>
 
@@ -20,9 +22,13 @@
 </template>
 
 <script>
+import ProjectNav from '../../components/ProjectNav.vue'
 
 export default {
-    name: 'projectone'
+    name: 'projectone',
+    components: {
+        'project-nav': ProjectNav
+    }
 }
 </script>
 

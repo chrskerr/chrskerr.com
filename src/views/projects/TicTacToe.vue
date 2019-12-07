@@ -1,5 +1,7 @@
 <template>
     <div id='tictactoe'>
+        <project-nav />
+
         <div v-if=(!active)>
             <a href='https://github.com/chrskerr/ProjectZero' target="_blank">Tic Tac Toe (GitHub repo)</a>
             <p>Tic Tac Toe was our first major solo project (known as Project Zeo) during the General Assembly Software immersive course. The goal was to create the game with working logic and views, then to take it as far as possible during the week allocated.</p>
@@ -13,7 +15,8 @@
 </template>
 
 <script>
-import EmbedIframe from '../components/EmbedIframe'
+import EmbedIframe from '../../components/EmbedIframe'
+import ProjectNav from '../../components/ProjectNav.vue'
 
 export default {
     name: 'tictactoe',
@@ -28,7 +31,8 @@ export default {
         }
     },
     components: {
-        'embed-iframe': EmbedIframe
+        'embed-iframe': EmbedIframe,
+        'project-nav': ProjectNav
     }
 }
 </script>

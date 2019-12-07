@@ -12,11 +12,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/pimonitor">Pi Monitor</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link id='has_depth' to="/piroku">Pi-roku, amnesiatic webhosting</router-link> |
-      <router-link to="/catgame">JS Cat Game</router-link> |
-      <router-link to="/tictactoe">Tic Tac Toe</router-link> | 
-      <router-link to="/projectone">File Upload / Instant Messaging</router-link> | 
-      <router-link to="/basicflights">Basic Flight Booker</router-link>
+      <router-link id='has_depth' to="/projects">My Projects</router-link>
     </div>
 
     <router-view />
@@ -39,7 +35,7 @@
 }
 
 #nav {
-  padding: 30px 0px 15px 0px;
+  padding: 30px 0px 5px 0px;
 }
 
 #nav a {
@@ -51,7 +47,7 @@
   color: #42b983;
 }
 
-a.router-link-active#has_depth {
+#nav a.router-link-active#has_depth {
   color: #42b983;
 }
 

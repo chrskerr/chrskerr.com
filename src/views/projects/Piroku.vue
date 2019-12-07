@@ -1,9 +1,13 @@
 <template>
   <div id="piroku">
+    <project-nav />
+
     <div id="nav">
-      <router-link to="/piroku">Config</router-link> |
-      <router-link to="/piroku/console">Console</router-link>
+      <router-link to="/projects/piroku">Config</router-link> |
+      <router-link to="/projects/piroku/console">Console</router-link>
     </div>
+
+
     <p>
       <em>Pi-roku</em> is a clone of Heroku with short-term memory problems.
     </p>
@@ -32,6 +36,7 @@
 
 <script>
 import _ from 'lodash';
+import ProjectNav from '../../components/ProjectNav.vue'
 
 export default {
   name: "piroku",
@@ -55,6 +60,9 @@ export default {
       }
     }, 1000)
   },
+  components: {
+    'project-nav': ProjectNav
+  }
 };
 </script>
 
@@ -66,6 +74,6 @@ export default {
   }
 
   #nav { 
-    padding: 0px
+    padding: 0px 0px 5px 0px;
   }
 </style>

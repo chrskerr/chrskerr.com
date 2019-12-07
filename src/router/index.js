@@ -24,34 +24,44 @@ const routes = [
     component: () => import("../views/Pimonitor.vue")
   },
   {
-    path: "/piroku",
+    path: "/projects",
+    name: "projects",
+    component: () => import("../views/Projects.vue")
+  },
+  {
+    path: "/projects/piroku",
     name: "piroku",
-    component: () => import("../views/Piroku.vue")
+    component: () => import("../views/projects/Piroku.vue")
   },
   {
-    path: "/piroku/console",
+    path: "/projects/piroku/console",
     name: "piroku-console",
-    component: () => import("../views/PirokuConsole.vue")
+    component: () => import("../views/projects/PirokuConsole.vue")
   },
   {
-    path: "/tictactoe",
+    path: "/projects/tictactoe",
     name: "tictactoe",
-    component: () => import("../views/TicTacToe.vue")
+    component: () => import("../views/projects/TicTacToe.vue")
   },
   {
-    path: "/catgame",
+    path: "/projects/catgame",
     name: "catgame",
-    component: () => import("../views/CatGame.vue")
+    component: () => import("../views/projects/CatGame.vue")
   },
   {
-    path: "/projectone",
+    path: "/projects/projectone",
     name: "projectone",
-    component: () => import("../views/ProjectOne.vue")
+    component: () => import("../views/projects/ProjectOne.vue")
   },
   {
-    path: "/basicflights",
+    path: "/projects/basicflights",
     name: "basicflights",
-    component: () => import("../views/BasicFlights.vue")
+    component: () => import("../views/projects/BasicFlights.vue")
+  },
+  {
+    path: "/projects/referendum",
+    name: "referendum",
+    component: () => import("../views/projects/Referendum.vue")
   }
 ];
 

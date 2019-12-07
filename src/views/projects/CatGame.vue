@@ -1,5 +1,7 @@
 <template>
     <div id='catgame'>
+        <project-nav />
+
         <div v-if=(!active)>
             <a href='https://github.com/chrskerr/Cat-Game' target="_blank">Cat Game (GitHub repo)</a>
             <p>The Cat Game was a week two piece of homework that I got a little too carried away with. The initial assignment was to make the cat graphic bounce from left-to-right from the edges of the screen with a suggestion that maybe other classes had built cooler stuff than we would and that we should try to make it exciting.</p>
@@ -19,7 +21,8 @@
 </template>
 
 <script>
-import EmbedIframe from '../components/EmbedIframe'
+import EmbedIframe from '../../components/EmbedIframe'
+import ProjectNav from '../../components/ProjectNav.vue'
 
 export default {
     name: 'catgame',
@@ -34,7 +37,8 @@ export default {
         }
     },
     components: {
-        'embed-iframe': EmbedIframe
+        'embed-iframe': EmbedIframe,
+        'project-nav': ProjectNav
     }
 }
 </script>

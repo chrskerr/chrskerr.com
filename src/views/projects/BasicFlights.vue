@@ -1,5 +1,7 @@
 <template>
     <div id='basicflights'>
+        <project-nav />
+
         <div v-if=(!active)>
             <a href='https://github.com/aleksanderbrymora/burning-client' target="_blank">Basic Flight Bookings Portal (GitHub repo)</a>
 
@@ -15,7 +17,8 @@
 </template>
 
 <script>
-import EmbedIframe from '../components/EmbedIframe'
+import EmbedIframe from '../../components/EmbedIframe'
+import ProjectNav from '../../components/ProjectNav.vue'
 
 export default {
     name: 'basicflights',
@@ -30,7 +33,8 @@ export default {
         }
     },
     components: {
-        'embed-iframe': EmbedIframe
+        'embed-iframe': EmbedIframe,
+        'project-nav': ProjectNav
     }
 }
 </script>
