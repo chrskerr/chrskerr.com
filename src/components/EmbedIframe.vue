@@ -1,7 +1,7 @@
 <template>
     <div id='embed-iframe'>
         <iframe :src='url' frameborder="0"></iframe>
-        <div id='close-button' v-on:click="closeFrame">close</div>
+        <button id='close-button' v-on:click="closeFrame">X</button>
     </div>
 </template>
 
@@ -38,9 +38,13 @@ export default {
 
     #close-button {
         position: absolute;
-        background-color: red;
         top: -10px;
         left: -10px;
-        padding: 1px 3px;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        padding: 0;
+        margin: 0;
+        font-size: 100%;
     }
 </style>

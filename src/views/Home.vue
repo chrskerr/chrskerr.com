@@ -2,7 +2,7 @@
   <div class="home">
     <p>Welcome to my homepage / portfolio.</p>
     <p>
-      This is a collection of projects and interesting things I've worked on so
+      This is a collection of projects and interests that I've worked on so
       far, plus an excuse to learn much more about my Raspberry Pi (where this
       hosted) and Vue (the current server).
     </p>

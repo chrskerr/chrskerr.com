@@ -1,7 +1,7 @@
 <template>
     <div id="referedum">
         <project-nav />
-        <p>I'm here</p>
+        <p>Work In Progress</p>
     </div>
 </template>
 

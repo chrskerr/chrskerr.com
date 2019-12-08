@@ -1,16 +1,11 @@
 <template>
     <div id="pimonitor">
-        <p>{{message}}</p>
+        <p>Work In Progress</p>
     </div>
 </template>
 
 <script>
 export default {
-    name: "pimonitor",
-    data() {
-        return{
-            message: "Pi Sysmon Coming Soon"
-        }
-    }
+    name: "pimonitor"
 }
 </script>

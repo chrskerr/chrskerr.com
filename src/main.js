@@ -1,7 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+// import 'semantic-ui-css/semantic.css';
 import "milligram/dist/milligram.min.css";
+
 
 Vue.config.productionTip = false;
 

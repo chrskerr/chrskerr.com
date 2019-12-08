@@ -37,6 +37,8 @@
 @media only screen and (max-width: 600px) {
   #app {
     margin: 0 1em;
+    min-height: 150vh;
+
   }
 }
 

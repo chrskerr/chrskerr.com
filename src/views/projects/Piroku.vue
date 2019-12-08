@@ -1,16 +1,12 @@
 <template>
   <div id="piroku">
+    
     <project-nav />
-
-    <div id="nav">
-      <router-link to="/projects/piroku">Config</router-link> |
-      <router-link to="/projects/piroku/console">Console</router-link>
-    </div>
-
 
     <p>
       <em>Pi-roku</em> is a clone of Heroku with short-term memory problems.
     </p>
+    <p>Work In Progress</p>
     <p>
       It will accept a GitHub repository as input and (providing it matches
       certain input conditions) and host it until Midnight AEST. At which time
@@ -58,7 +54,7 @@ export default {
         this.status = false;
         this.url = "please enter a GitHub URL";
       }
-    }, 1000)
+    }, 600)
   },
   components: {
     'project-nav': ProjectNav
@@ -73,7 +69,4 @@ export default {
     width: 350px;
   }
 
-  #nav { 
-    padding: 0px 0px 5px 0px;
-  }
 </style>
