@@ -6,6 +6,9 @@
             <a href='https://github.com/chrskerr/ProjectOne' target="_blank">File Sharing / Instant Messaging (GitHub repo)</a>
 
             <p>Description coming</p>
+
+            <p>Heroku hosting tends to shift to an inactive mode if the page isn't accessed for a few hours. When accessed it will automatically reactivate, but this can take a minute or two.</p>
+
             <a href='https://chrskerr-projectone.herokuapp.com' target="_blank">Hosted page</a>
             <p>Demo accounts:</p>
             <ul>
