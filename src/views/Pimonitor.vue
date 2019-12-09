@@ -57,6 +57,7 @@ export default {
         border: thin lightgrey solid;
         padding: 2px 5px;
         font-family: monospace;
+        margin-bottom: 2.5rem;
     }
 
     tr, td {
