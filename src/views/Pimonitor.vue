@@ -4,11 +4,13 @@
             
         <p v-if='data.uptime' class='code'>$ uptime => {{data.uptime.stdout}}</p>
         <p v-if='data.uname' class='code'>$ uname => {{data.uname.stdout}}</p>
+        <p v-if='data.gpu_temp' class='code'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
+        <p v-if='data.cpu_temp' class='code'>$ cpu_temp => {{data.cpu_temp.human}} &deg;C</p>
         <div v-if='data.free' class='code'>
             <p>$ free -h =></p>
             <table>
                 <tbody>
-                <tr v-for='row in data.free.stdout' v-bind:key='row'>
+                <tr v-for='row in data.free.human' v-bind:key='row'>
                     <td v-for='cell in row' v-bind:key='cell'>{{cell}}</td>
                 </tr>
                 </tbody>
@@ -19,7 +21,7 @@
             <p>$ df -h =></p>
             <table>
                 <tbody>
-                <tr v-for='row in data.df.stdout' v-bind:key='row'>
+                <tr v-for='row in data.df.human' v-bind:key='row'>
                     <td v-for='cell in row' v-bind:key='cell'>{{cell}}</td>
                 </tr>
                 </tbody>
