@@ -59,13 +59,13 @@ export default {
         font-family: monospace;
     }
 
-    table, tr, td {
+    tr, td {
         border: none;
         margin: 0px;
         padding: 0px;
     }
 
-    #monitor-button {
-        margin-top: 1rem;
+    table {
+        border: none;
     }
 </style>
