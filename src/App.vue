@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <nav id="top">
+    <div id="top">
       <div id="text_container">
         <h1>Chris Kerr</h1>
         <h2>Jnr Developer</h2>
       </div>
       <img id="headshot" src="@/assets/1.png" alt="Chris headshot" />
-    </nav>
+    </div>
 
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/pimonitor">Pi Monitor</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link id='has_depth' to="/projects">My Projects</router-link>
+      <router-link to="/about">About Me</router-link> |
+      <router-link to="/pimonitor">Pi System-Monitor</router-link> |
+      <router-link class='has_depth' to="/projects">My Projects</router-link>
     </div>
 
     <router-view />
@@ -34,14 +34,6 @@
   margin: 2em 4em 0 8em;
 }
 
-@media only screen and (max-width: 600px) {
-  #app {
-    margin: 0 1em;
-    min-height: 150vh;
-
-  }
-}
-
 #nav {
   padding: 30px 0px 5px 0px;
 }
@@ -55,27 +47,22 @@
   color: #42b983;
 }
 
-#nav a.router-link-active#has_depth {
+#nav a.router-link-active.has_depth {
   color: #42b983;
 }
 
 /* CSS for the top row */
 #headshot {
   border-radius: 100%;
-  margin: 0 3em;
+  /* margin: 0 0 0 5em; */
   max-width: 250px;
   max-height: 250px;
 }
 
 #top {
   display: flex;
-}
-
-@media only screen and (max-width: 705px) {
-  #top {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+  justify-content: space-between;
+  max-width: 600px;
 }
 
 #text_container {
@@ -92,5 +79,18 @@ footer {
 
 footer a {
   margin: 0px 2em;
+}
+
+
+
+@media only screen and (max-width: 705px) {
+  #top {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #app {
+    margin: 0 1em;
+    min-height: 150vh;
+  }
 }
 </style>
