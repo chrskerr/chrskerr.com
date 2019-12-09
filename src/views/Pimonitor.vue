@@ -4,7 +4,17 @@
             
         <p v-if='data.uptime' class='code'>$ uptime => {{data.uptime.stdout}}</p>
         <p v-if='data.uname' class='code'>$ uname => {{data.uname.stdout}}</p>
-        <p v-if='data.free' class='code'>$ free -h => {{data.free.stdout}}</p>
+        <div v-if='data.free' class='code'>
+            <p>$ free -h =></p>
+            <table>
+                <tbody>
+                <tr v-for='row in data.free.stdout' v-bind:key='row'>
+                    <td v-for='cell in row' v-bind:key='cell'>{{cell}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div v-if='data.df' class='code'>
             <p>$ df -h =></p>
             <table>
