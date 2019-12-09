@@ -2,10 +2,10 @@
     <div id="pimonitor">
         <p>Work In Progress</p>
             
-        <p v-if='data.uptime.stdout' class='code'>$ uptime => {{data.uptime.stdout}}</p>
-        <p v-if='data.uname.stdout' class='code'>$ uname => {{data.uname.stdout}}</p>
+        <p v-if='data.uptime' class='code'>$ uptime => {{data.uptime.stdout}}</p>
+        <p v-if='data.uname' class='code'>$ uname => {{data.uname.stdout}}</p>
         <p v-if='data.free' class='code'>$ free -h => {{data.free.stdout}}</p>
-        <div v-if='data.df.stdout' class='code'>
+        <div v-if='data.df' class='code'>
             <p>$ df -h =></p>
             <table>
                 <tbody>
@@ -32,7 +32,7 @@ export default {
     },
     methods: {
         refresh () {
-            axios.get("http://localhost:3125/monitor").then((res) => this.data = res.data).catch((err) => console.error(err))
+            axios.get("https://api.chrskerr.com/monitor").then((res) => this.data = res.data) //.catch((err) => console.error(err))
         }
     },
     mounted() {
