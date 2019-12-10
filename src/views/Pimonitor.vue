@@ -61,4 +61,8 @@ export default {
     table {
         border: none;
     }
+
+    .code {
+        margin-bottom: 0;
+    }
 </style>

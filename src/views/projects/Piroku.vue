@@ -110,6 +110,7 @@ export default {
       }
     }, 600),
     toggleStatus: function(e) {
+      console.log(e)
       if (e.path[2].open === undefined) {
         this.console = !e.path[1].open;
       } else {

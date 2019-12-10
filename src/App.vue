@@ -90,6 +90,10 @@ footer a {
     margin-bottom: 2.5rem;
 }
 
+.code > p {
+  margin: 0;
+}
+
 @media only screen and (max-width: 705px) {
   #top {
     flex-direction: column-reverse;
