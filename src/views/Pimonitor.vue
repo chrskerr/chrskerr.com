@@ -1,7 +1,5 @@
 <template>
-    <div id="pimonitor">
-        <p>Work In Progress</p>
-            
+    <div id="pimonitor">            
         <p v-if='data.uptime' class='code'>$ uptime => {{data.uptime.stdout}}</p>
         <p v-if='data.uname' class='code'>$ uname => {{data.uname.stdout}}</p>
         <p v-if='data.gpu_temp' class='code'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
@@ -10,8 +8,8 @@
             <p>$ free -h =></p>
             <table>
                 <tbody>
-                <tr v-for='row in data.free.human' v-bind:key='row'>
-                    <td v-for='cell in row' v-bind:key='cell'>{{cell}}</td>
+                <tr v-for='( row, index ) in data.free.human' v-bind:key='index'>
+                    <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
                 </tr>
                 </tbody>
             </table>
@@ -21,8 +19,8 @@
             <p>$ df -h =></p>
             <table>
                 <tbody>
-                <tr v-for='row in data.df.human' v-bind:key='row'>
-                    <td v-for='cell in row' v-bind:key='cell'>{{cell}}</td>
+                <tr v-for='( row, index ) in data.df.human' v-bind:key='index'>
+                    <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
                 </tr>
                 </tbody>
             </table>
@@ -54,14 +52,6 @@ export default {
 </script>
 
 <style scoped>
-    .code {
-        background-color: #F6F6F6;
-        border: thin lightgrey solid;
-        padding: 2px 5px;
-        font-family: monospace;
-        margin-bottom: 2.5rem;
-    }
-
     tr, td {
         border: none;
         margin: 0px;

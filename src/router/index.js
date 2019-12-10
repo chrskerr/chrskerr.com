@@ -34,11 +34,6 @@ const routes = [
     component: () => import("../views/projects/Piroku.vue")
   },
   {
-    path: "/projects/piroku/console",
-    name: "piroku-console",
-    component: () => import("../views/projects/PirokuConsole.vue")
-  },
-  {
     path: "/projects/tictactoe",
     name: "tictactoe",
     component: () => import("../views/projects/TicTacToe.vue")

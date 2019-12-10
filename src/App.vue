@@ -81,7 +81,14 @@ footer a {
   margin: 0px 2em;
 }
 
-
+/* Global CSS for other things */
+.code {
+    background-color: #F6F6F6;
+    border: thin lightgrey solid;
+    padding: 2px 5px;
+    font-family: monospace;
+    margin-bottom: 2.5rem;
+}
 
 @media only screen and (max-width: 705px) {
   #top {
