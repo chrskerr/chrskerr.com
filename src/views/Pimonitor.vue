@@ -60,9 +60,10 @@ export default {
 
     table {
         border: none;
+        margin-bottom: 0;
     }
 
-    .code {
+    .code p {
         margin-bottom: 0;
     }
 </style>
