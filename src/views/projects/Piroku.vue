@@ -109,13 +109,8 @@ export default {
         this.url = "please enter a GitHub URL";
       }
     }, 600),
-    toggleStatus: function(e) {
-      console.log(e)
-      if (e.path[2].open === undefined) {
-        this.console = !e.path[1].open;
-      } else {
-        this.console = !e.path[2].open;
-      }
+    toggleStatus: function() {
+      this.console = !this.console;
     },
     chooseServer: function(e) {
       this.server = e.target.value
