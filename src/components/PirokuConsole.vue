@@ -1,6 +1,6 @@
 <template>
   <div id="piroku-console">
-    <p>Full console history for the current project, if active, refreshes every 2.5 seconds</p>
+    <p>Full console history for the current project, if active, refreshes every second</p>
     <div class='code console' id='pi-session-console'>
 
       <p>{{data}}</p>
@@ -12,12 +12,13 @@
 
 <script>
 import axios from 'axios';
+let timeouts;
 
 export default {
   name: "piroku-console",
   data () {
     return {
-      data: ''
+      data: '',
     }
   },
   methods: {
@@ -26,12 +27,15 @@ export default {
         this.data = res.data;
         let node = document.getElementById('pi-session-console');
         node.scrollTop = node.offsetHeight + 400;
-        setTimeout(this.refresh, 2500);
+        timeouts = setTimeout(this.refresh, 1000);
         });
       }
   },
   mounted () {
     this.refresh();
+  },
+  beforeDestroy () {
+    clearTimeout(timeouts);
   }
 };
 </script>

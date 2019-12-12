@@ -1,18 +1,9 @@
 <template>
-    <div id="pimonitor">            
-        <p v-if='data.uptime' class='code'>$ uptime => {{data.uptime.stdout}}</p>
-        <p v-if='data.uname' class='code'>$ uname => {{data.uname.stdout}}</p>
-        <p v-if='data.gpu_temp' class='code'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
-        <p v-if='data.cpu_temp' class='code'>$ cpu_temp => {{data.cpu_temp.human}} &deg;C</p>
-        <div v-if='data.free' class='code'>
-            <p>$ free -h =></p>
-            <table>
-                <tbody>
-                <tr v-for='( row, index ) in data.free.human' v-bind:key='index'>
-                    <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
-                </tr>
-                </tbody>
-            </table>
+    <div id="pimonitor">  
+
+        <div class='code'>
+            <p v-if='data.gpu_temp'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
+            <p v-if='data.cpu_temp'>$ cpu_temp => {{data.cpu_temp.human}} &deg;C</p>
         </div>
 
         <div v-if='data.df' class='code'>
@@ -26,7 +17,26 @@
             </table>
         </div>
 
+        <div v-if='data.top' class='code'>
+            <p>$ top -b -n 1 -o VIRT =></p>
+            <table>
+                <tbody>
+                <tr v-for='( row, index ) in data.top.first' v-bind:key='index'>
+                    {{row}}
+                </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                <tr v-for='( row, index ) in data.top.human' v-bind:key='index'>
+                    <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
         <button id='monitor-button' v-on:click='refresh'>Refresh Data</button>
+
     </div>
 </template>
 
@@ -65,5 +75,9 @@ export default {
 
     .code p {
         margin-bottom: 0;
+    }
+
+    .mono {
+        font-family: monospace; 
     }
 </style>
