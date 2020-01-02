@@ -1,24 +1,36 @@
 <template>
   <div class="home">
-    <p>Welcome to my homepage / portfolio.</p>
     <p>
-      This is a collection of projects and interests that I've worked on so
-      far, plus an excuse to learn much more about my Raspberry Pi (where this
-      hosted) and Vue (the current server).
+      I like solving problems, technology and talking to people.
     </p>
     <p>
-      I'm currently enrolled in General Assembly's Software Immersive programme,
-      learning full-stack web development with a hope to code for a living once
-      I graduate.
+      So this year I decided to resign from my technical sales role to learn how to code and begin a career as a developer. 
     </p>
+    <p>
+      I am currently searching for my first software development role to begin utilising the skills that I have learnt after graduating from General Assembly's Software Engineering Immersive programme <a target="_#" href="https://generalassemb.ly/education/software-engineering-immersive/sydney">(more details)</a>.
+    </p>
+    <p>I have focussed on the following technologies:</p>
+    <ul>
+      <li>React</li>
+      <li>Vue</li>
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>Node & ExpressJS</li>
+      <li>SQL, Postgresql, Mongo</li>
+      <li>Ruby & Ruby on Rails</li>
+      <li>Elixir (currently learning the basics)</li>
+    </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "home",
   components: {}
 };
 </script>
+
+<style scoped>
+
+
+</style>

@@ -9,17 +9,16 @@
     </div>
 
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About Me</router-link> |
-      <router-link to="/pimonitor">Pi System-Monitor</router-link> |
-      <router-link class='has_depth' to="/projects">My Projects</router-link>
+      <router-link to="/">Me</router-link> |
+      <router-link class='has_depth' to="/projects">My Projects</router-link> | 
+      <router-link to="/pimonitor">Pi System-Monitor</router-link>
     </div>
 
     <router-view />
 
     <footer>
       <a href="https://www.github.com/chrskerr" target="_blank">https://www.github.com/chrskerr</a>
-      <p>-</p>
+      <p id='dash'>-</p>
       <a href="https://www.linkedin.com/in/chrskerr" target="_blank">https://www.linkedin.com/in/chrskerr</a>
     </footer>
   </div>
@@ -88,6 +87,7 @@ footer a {
     padding: 2px 5px;
     font-family: monospace;
     margin-bottom: 2.5rem;
+    /* text-align: left; */
 }
 
 .code > p {
@@ -101,7 +101,14 @@ footer a {
   }
   #app {
     margin: 0 1em;
-    min-height: 150vh;
+    text-justify: auto;
+  }
+  footer {
+    flex-direction: column;
+    display: flex;
+  }
+  footer #dash {
+    display: none;
   }
 }
 </style>

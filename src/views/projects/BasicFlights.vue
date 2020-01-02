@@ -5,9 +5,7 @@
         <div v-if=(!active)>
             <a href='https://github.com/aleksanderbrymora/burning-client' target="_blank">Basic Flight Bookings Portal (GitHub repo)</a>
 
-            <p>React front-end (hosted locally on Pi) linked to Rails back-end hosted on Heroku</p>
-
-            <p>Heroku hosting (for the APIs) tends to shift to an inactive mode if the page isn't accessed for a few hours. When accessed it will automatically reactivate, but this can take a minute or two.</p>
+            <p>This was our first group assignment, to build a flight booking service. We chose a React front-end (hosted locally on my Raspberry Pi) linked to Rails back-end hosted on Heroku. These two connect via basic API calls.</p>
             
             <p>Largely untouched since finishing, for nostaglic reasons.</p>
             <button v-on:click="toggleActive">Display</button>

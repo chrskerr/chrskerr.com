@@ -1,5 +1,7 @@
 <template>
     <div id="pimonitor">  
+        
+        <p>This page is hosted at home on my Raspberry Pi, and has been an exciting project to learn the finer points of full lifecycle webdevelopment. I have included some system monitor information for curiosities sake.</p>
 
         <div class='code'>
             <p v-if='data.gpu_temp'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
@@ -18,7 +20,7 @@
         </div>
 
         <div v-if='data.top' class='code'>
-            <p>$ top -b -n 1 -o VIRT =></p>
+            <p>$ top -b -n 1 -o %MEM =></p>
             <table>
                 <tbody>
                 <tr v-for='( row, index ) in data.top.first' v-bind:key='index'>

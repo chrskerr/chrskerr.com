@@ -6,7 +6,7 @@
     <p>
       <em>Pi-roku</em> is a clone of Heroku with short-term memory problems.
     </p>
-    <p>Work In Progress</p>
+    <p><strong>Work In Progress</strong></p>
 
 
     <p>
@@ -59,6 +59,12 @@
       
         <button>Create Server</button>
       </div>
+
+      <div v-if='response'>
+        <p style="margin-bottom: 0">Submission accepted and initialised using the below. Please refer to console for progress.</p>
+        <p class='code'>{{response}}</p>
+      </div>
+
     </details>
   
 
@@ -93,7 +99,8 @@ export default {
       status: false,
       console: false,
       server: 'none selected',
-      npm: 'none selected'
+      npm: 'none selected',
+      response: ''
       }
   },
   methods: {
@@ -122,9 +129,6 @@ export default {
   components: {
     'project-nav': ProjectNav,
     'piroku-console': PirokuConsole
-  },
-  calculated: {
-
   }
 };
 </script>
