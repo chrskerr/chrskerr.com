@@ -54,9 +54,9 @@ const routes = [
     component: () => import("../views/projects/BasicFlights.vue")
   },
   {
-    path: "/projects/referendum",
-    name: "referendum",
-    component: () => import("../views/projects/Referendum.vue")
+    path: "/projects/wevote",
+    name: "wevote",
+    component: () => import("../views/projects/WeVote.vue")
   }
 ];
 

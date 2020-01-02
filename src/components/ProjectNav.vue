@@ -2,7 +2,7 @@
     <div>
         <div id="nav">
             <span id='hide'>-- </span>   
-            <router-link to='/projects/referendum'>Referendum App</router-link><span id='hide'> | </span>
+            <router-link to='/projects/wevote'>WeVote</router-link><span id='hide'> | </span>
             <router-link to="/projects/piroku">Pi-roku, amnesiatic webhosting</router-link><span id='hide'> | </span>
             <router-link to="/projects/basicflights">Basic Flight Booker</router-link><span id='hide'> | </span>
             <router-link to="/projects/projectone">File Upload / Instant Messaging</router-link><span id='hide'> | </span>
