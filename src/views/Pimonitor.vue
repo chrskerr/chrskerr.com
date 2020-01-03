@@ -3,12 +3,14 @@
         
         <p>This page is hosted at home on my Raspberry Pi, and has been an exciting project to learn the finer points of full lifecycle webdevelopment. I have included some system monitor information for curiosities sake.</p>
 
+        <p>Horizontally scrollable</p>
+
         <div class='code'>
             <p v-if='data.gpu_temp'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
             <p v-if='data.cpu_temp'>$ cpu_temp => {{data.cpu_temp.human}} &deg;C</p>
         </div>
 
-        <div v-if='data.df' class='code'>
+        <div v-if='data.df' class='code scroll-box'>
             <p>$ df -h =></p>
             <table>
                 <tbody>
@@ -19,7 +21,7 @@
             </table>
         </div>
 
-        <div v-if='data.top' class='code'>
+        <div v-if='data.top' class='code scroll-box'>
             <p>$ top -b -n 1 -o %MEM =></p>
             <table>
                 <tbody>
@@ -81,5 +83,12 @@ export default {
 
     .mono {
         font-family: monospace; 
+    }
+    .scroll-box {
+        max-width: 100vw;
+        overflow-x: scroll;
+    }
+    table {
+        min-width: 650px;
     }
 </style>
