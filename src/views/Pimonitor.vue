@@ -14,9 +14,9 @@
             <p>$ df -h =></p>
             <table>
                 <tbody>
-                <tr v-for='( row, index ) in data.df.human' v-bind:key='index'>
-                    <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
-                </tr>
+                    <tr v-for='( row, index ) in data.df.human' v-bind:key='index'>
+                        <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -25,16 +25,16 @@
             <p>$ top -b -n 1 -o %MEM =></p>
             <table>
                 <tbody>
-                <tr v-for='( row, index ) in data.top.first' v-bind:key='index'>
-                    {{row}}
-                </tr>
+                    <tr v-for='( row, index ) in data.top.first' v-bind:key='index'>
+                        <td>{{row}}</td>
+                    </tr>
                 </tbody>
             </table>
             <table>
                 <tbody>
-                <tr v-for='( row, index ) in data.top.human' v-bind:key='index'>
-                    <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
-                </tr>
+                    <tr v-for='( row, index ) in data.top.human' v-bind:key='index'>
+                        <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
