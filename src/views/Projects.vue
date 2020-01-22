@@ -3,7 +3,6 @@
 
         <project-nav />
 
-        <p>What I've worked on during the course, newest to oldest.</p>
     </div>
 </template>
 
@@ -14,6 +13,9 @@ export default {
     name: 'projects',
     components: {
         'project-nav': ProjectNav
-    }
+    },
+    beforeCreate () {
+        this.$router.push({ name: 'penne-pinching' })
+    },
 }
 </script>

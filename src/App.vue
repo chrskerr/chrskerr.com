@@ -10,7 +10,7 @@
 
     <div id="nav">
       <router-link to="/">Me</router-link> |
-      <router-link class='has_depth' to="/projects/penne-pinching">My Projects</router-link> | 
+      <router-link class='has_depth' to="/projects">My Projects</router-link> | 
       <router-link to="/pimonitor">Pi System-Monitor</router-link>
     </div>
 

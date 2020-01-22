@@ -4,7 +4,7 @@
         <h3>Penne Pinching</h3>
         <ul>
             <li><a target="_blank" rel="noreferrer" href='https://penne-pinching.web.app/'>Link to site</a></li>
-            <li><a href='https://github.com/chrskerr/penne-pinching' target="_blank" rel="noreferrer">GitHub repo</a></li>
+            <li><a href='https://github.com/chrskerr/PennePinching' target="_blank" rel="noreferrer">GitHub repo</a></li>
         </ul>
         <p>In mid-January 2020, my girlfriend and I participated in a promotion at Fratelli Fresh, where for just $399 each, we received one free meal a day for the rest of our lives.</p>
         <p>Obviously we grabbed this deal, but to make sure we were actually getting our moneys worth, I created Penne Pinching!</p>
