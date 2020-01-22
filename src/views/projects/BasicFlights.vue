@@ -1,16 +1,15 @@
 <template>
     <div id='basicflights'>
         <project-nav />
+        <h3>Basic Flight Bookings Portal</h3>
+        <ul>
+            <li><a target="_blank" rel="noreferrer" href='https://react.chrskerr.com/'>Link to site</a></li>
+            <li><a href='https://github.com/aleksanderbrymora/burning-client' target="_blank" rel="noreferrer">GitHub repo</a></li>
+        </ul>
 
-            <a href='https://github.com/aleksanderbrymora/burning-client' target="_blank">Basic Flight Bookings Portal (GitHub repo)</a>
-
-            <p>This was our first group assignment, to build a flight booking service. We chose a React front-end (hosted locally on my Raspberry Pi) linked to Rails back-end hosted on Heroku. These two connect via basic API calls.</p>
-            
-            <p>Largely untouched since finishing, for nostaglic reasons.</p>
-
+        <p>This was our first group assignment, to build a flight booking service. We chose a React front-end (hosted locally on my Raspberry Pi) linked to Rails back-end hosted on Heroku. These two connect via basic API calls.</p>
         
-        <a class='button' target="_blank" href='https://react.chrskerr.com/'>Open</a>
-
+        <p>Largely untouched since finishing, for nostaglic reasons.</p>
     </div>
 </template>
 
@@ -26,5 +25,12 @@ export default {
 </script>
 
 <style scoped>
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
 
+    li {
+        margin-left: 1em;
+    }
 </style>

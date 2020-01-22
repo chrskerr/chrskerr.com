@@ -57,7 +57,12 @@ const routes = [
     path: "/projects/wevote",
     name: "wevote",
     component: () => import("../views/projects/WeVote.vue")
-  }
+  },
+  {
+    path: "/projects/penne-pinching",
+    name: "penne-pinching",
+    component: () => import("../views/projects/PennePinching.vue")
+  },
 ];
 
 const router = new VueRouter({

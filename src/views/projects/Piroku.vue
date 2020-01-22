@@ -87,7 +87,7 @@
 
 
 <script>
-import _ from 'lodash';
+import * as debounce from 'lodash/debounce'
 import ProjectNav from '../../components/ProjectNav.vue'
 import PirokuConsole from '../../components/PirokuConsole.vue'
 
@@ -104,25 +104,25 @@ export default {
       }
   },
   methods: {
-    onUrlType: _.debounce(function (e) {
-      if (e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*\.git$/)) {
+    onUrlType: debounce( function (e) {
+      if ( e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*\.git$/) ) {
         this.status = true;
         this.url = e.target.value;
-      } else if (e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*/)) {
+      } else if ( e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*/) ) {
         this.status = true;
         this.url = e.target.value + ".git"
       } else {
         this.status = false;
         this.url = "please enter a GitHub URL";
       }
-    }, 600),
+    }, 600 ),
     toggleStatus: function() {
       this.console = !this.console;
     },
-    chooseServer: function(e) {
+    chooseServer: function( e ) {
       this.server = e.target.value
     },
-    chooseNPM: function(e) {
+    chooseNPM: function( e ) {
       this.npm = e.target.value
     }
   },
