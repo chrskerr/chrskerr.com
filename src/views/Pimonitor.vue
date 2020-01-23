@@ -5,6 +5,9 @@
 
         <p>Horizontally scrollable</p>
 
+        <p v-if='timer === 4' >Updating...</p>
+        <p v-else>Refreshing in {{ timer }}</p>
+            
         <div class='code'>
             <p v-if='data.gpu_temp'>$ gpu_temp => {{data.gpu_temp.human}} &deg;C</p>
             <p v-if='data.cpu_temp'>$ cpu_temp => {{data.cpu_temp.human}} &deg;C</p>
@@ -39,7 +42,7 @@
             </table>
         </div>
 
-        <button id='monitor-button' v-on:click='refresh'>Refresh Data</button>
+        <!-- <button id='monitor-button' v-on:click='refresh'>Refreshing Data in {{ timer }}</button> -->
 
     </div>
 </template>
@@ -51,17 +54,27 @@ export default {
     name: "pimonitor",
     data() {
         return {
-            data: ''
+            data: '',
+            timer: 4,
         }
     },
     methods: {
         refresh () {
-            axios.get("https://api.chrskerr.com/monitor").then((res) => this.data = res.data) //.catch((err) => console.error(err))
-        }
+            this.timer = 4;
+            axios.get( "https://api.chrskerr.com/monitor" ).then( (res) => {
+                this.data = res.data;
+                setTimeout( () => this.timer = 2, 1000 );
+                setTimeout( () => this.timer = 1, 2000 );
+                setTimeout( () => this.timer = 0, 3000 );
+                setTimeout( () => {
+                    this.refresh();
+                }, 4000 );
+            });
+        },
     },
     mounted() {
-        this.refresh()
-    }
+        this.refresh();
+    },
 }
 </script>
 
