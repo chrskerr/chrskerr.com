@@ -23,18 +23,22 @@ export default {
         padding: 0px 0px 10px 0px;
     }
 
-@media only screen and (max-width: 705px) {
-    #nav {
-        flex-direction: column;
-        display: flex;
+    hr {
+        margin: 2rem 0 0 0;
     }
-    #nav > a:before {
-        margin: 0 0.5em;
-        content: '-'
-    }
-    #hide {
-        display: none;
-    }
+
+    @media only screen and (max-width: 705px) {
+        #nav {
+            flex-direction: column;
+            display: flex;
+        }
+        #nav > a:before {
+            margin: 0 0.5em;
+            content: '-'
+        }
+        #hide {
+            display: none;
+        }
 }
 
 </style>
