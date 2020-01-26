@@ -87,7 +87,6 @@ footer a {
     padding: 2px 5px;
     font-family: monospace;
     margin-bottom: 2.5rem;
-    /* text-align: left; */
 }
 
 .code > p {

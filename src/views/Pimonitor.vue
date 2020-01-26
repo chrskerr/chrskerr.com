@@ -18,7 +18,9 @@
             <table>
                 <tbody>
                     <tr v-for='( row, index ) in data.df.human' v-bind:key='index'>
-                        <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
+                        <td v-for='( cell, index ) in row' v-bind:key='index'>
+                            {{ cell }}
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -29,20 +31,24 @@
             <table>
                 <tbody>
                     <tr v-for='( row, index ) in data.top.first' v-bind:key='index'>
-                        <td>{{row}}</td>
+                        <td v-for='( cell, index ) in row' v-bind:key='index'>
+                            {{ cell }}
+                        </td>
                     </tr>
                 </tbody>
             </table>
             <table>
                 <tbody>
                     <tr v-for='( row, index ) in data.top.human' v-bind:key='index'>
-                        <td v-for='( cell, index ) in row' v-bind:key='index'>{{cell}}</td>
+                        <td v-for='( cell, index ) in row' v-bind:key='index'>
+                            {{ cell }}
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- <button id='monitor-button' v-on:click='refresh'>Refreshing Data in {{ timer }}</button> -->
+
 
     </div>
 </template>
@@ -83,24 +89,16 @@ export default {
         border: none;
         margin: 0px;
         padding: 0px;
-        font-size: 1.6em;
     }
 
     table {
         border: none;
         margin-bottom: 0;
-    }
-
-    .code p {
-        margin-bottom: 0;
+        min-width: 650px;
     }
 
     .scroll-box {
         max-width: 100vw;
         overflow-x: scroll;
-    }
-
-    table {
-        min-width: 650px;
     }
 </style>
