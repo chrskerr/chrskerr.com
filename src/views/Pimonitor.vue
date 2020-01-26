@@ -5,7 +5,7 @@
 
         <p>Horizontally scrollable</p>
 
-        <p v-if='timer === 4' >Updating...</p>
+        <p v-if='timer === 4' >Refreshing...</p>
         <p v-else>Refreshing in {{ timer }}</p>
             
         <div class='code'>
@@ -83,6 +83,7 @@ export default {
         border: none;
         margin: 0px;
         padding: 0px;
+        font-size: 1.6em;
     }
 
     table {
@@ -94,13 +95,11 @@ export default {
         margin-bottom: 0;
     }
 
-    .mono {
-        font-family: monospace; 
-    }
     .scroll-box {
         max-width: 100vw;
         overflow-x: scroll;
     }
+
     table {
         min-width: 650px;
     }
