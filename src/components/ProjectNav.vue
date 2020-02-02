@@ -14,8 +14,8 @@
 
 <script>
 export default {
-    name: 'project-nav'
-}
+	name: "project-nav",
+};
 </script>
 
 <style scoped>

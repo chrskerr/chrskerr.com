@@ -31,7 +31,7 @@
             <table>
                 <tbody>
                     <tr v-for='( row, index ) in data.top.first' v-bind:key='index'>
-                        <td v-for='( cell, index ) in row' v-bind:key='index'>
+                        <td v-for='( cell, index ) in [ row ]' v-bind:key='index'>
                             {{ cell }}
                         </td>
                     </tr>
@@ -54,34 +54,34 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
-    name: "pimonitor",
-    data() {
-        return {
-            data: '',
-            timer: 4,
-        }
-    },
-    methods: {
-        refresh () {
-            this.timer = 4;
-            axios.get( "https://api.chrskerr.com/monitor" ).then( (res) => {
-                this.data = res.data;
-                setTimeout( () => this.timer = 2, 1000 );
-                setTimeout( () => this.timer = 1, 2000 );
-                setTimeout( () => this.timer = 0, 3000 );
-                setTimeout( () => {
-                    this.refresh();
-                }, 4000 );
-            });
-        },
-    },
-    mounted() {
-        this.refresh();
-    },
-}
+	name: "pimonitor",
+	data() {
+		return {
+			data: "",
+			timer: 4,
+		};
+	},
+	methods: {
+		refresh () {
+			this.timer = 4;
+			axios.get( "https://api.chrskerr.com/monitor" ).then(( res ) => {
+				this.data = res.data;
+				setTimeout(() => this.timer = 2, 1000 );
+				setTimeout(() => this.timer = 1, 2000 );
+				setTimeout(() => this.timer = 0, 3000 );
+				setTimeout(() => {
+					this.refresh();
+				}, 4000 );
+			});
+		},
+	},
+	mounted() {
+		this.refresh();
+	},
+};
 </script>
 
 <style scoped>
@@ -94,6 +94,7 @@ export default {
     table {
         border: none;
         margin-bottom: 0;
+        padding-top: 1rem;
         min-width: 650px;
     }
 

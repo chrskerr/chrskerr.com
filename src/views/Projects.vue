@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import ProjectNav from '../components/ProjectNav.vue'
+import ProjectNav from "../components/ProjectNav.vue";
 
 export default {
-    name: 'projects',
-    components: {
-        'project-nav': ProjectNav
-    },
-    beforeCreate () {
-        this.$router.push({ name: 'penne-pinching' })
-    },
-}
+	name: "projects",
+	components: {
+		"project-nav": ProjectNav,
+	},
+	beforeCreate () {
+		this.$router.push({ name: "penne-pinching" });
+	},
+};
 </script>

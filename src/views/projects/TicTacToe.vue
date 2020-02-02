@@ -17,27 +17,27 @@
 </template>
 
 <script>
-import EmbedIframe from '../../components/EmbedIframe'
-import ProjectNav from '../../components/ProjectNav.vue'
+import EmbedIframe from "../../components/EmbedIframe";
+import ProjectNav from "../../components/ProjectNav.vue";
 
 export default {
-    name: 'tictactoe',
-    data() {
-        return {
-            active: false,
-        }
-    },
-    methods: {
-        toggleActive () {
-            this.active = !this.active;
-            window.scrollTo( 0, 0 );
-        }
-    },
-    components: {
-        'embed-iframe': EmbedIframe,
-        'project-nav': ProjectNav
-    }
-}
+	name: "tictactoe",
+	data() {
+		return {
+			active: false,
+		};
+	},
+	methods: {
+		toggleActive () {
+			this.active = !this.active;
+			window.scrollTo( 0, 0 );
+		},
+	},
+	components: {
+		"embed-iframe": EmbedIframe,
+		"project-nav": ProjectNav,
+	},
+};
 </script>
 
 <style scoped>

@@ -8,16 +8,16 @@
 <script>
 
 export default {
-    name: 'embed-iframe',
-    props: {
-        url: String
-    },
-    methods: {
-        closeFrame () {
-            this.$emit('toggleActive')
-        }
-    }
-}
+	name: "embed-iframe",
+	props: {
+		url: String,
+	},
+	methods: {
+		closeFrame () {
+			this.$emit( "toggleActive" );
+		},
+	},
+};
 </script>
 
 <style scoped>

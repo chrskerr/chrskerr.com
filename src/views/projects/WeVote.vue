@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import ProjectNav from '../../components/ProjectNav.vue'
+import ProjectNav from "../../components/ProjectNav.vue";
 
 export default {
-    name: 'wevote',
-    components: {
-        'project-nav': ProjectNav
-    }
-}
+	name: "wevote",
+	components: {
+		"project-nav": ProjectNav,
+	},
+};
 </script>
 
 <style scoped>

@@ -11,32 +11,32 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 let timeouts;
 
 export default {
-  name: "piroku-console",
-  data () {
-    return {
-      data: '',
-    }
-  },
-  methods: {
-    refresh: function() {
-      axios.get("http://localhost:3125/hosting").then((res) => {
-        this.data = res.data;
-        let node = document.getElementById('pi-session-console');
-        node.scrollTop = node.offsetHeight + 400;
-        timeouts = setTimeout(this.refresh, 1000);
-        });
-      }
-  },
-  mounted () {
-    this.refresh();
-  },
-  beforeDestroy () {
-    clearTimeout(timeouts);
-  }
+	name: "piroku-console",
+	data () {
+		return {
+			data: "",
+		};
+	},
+	methods: {
+		refresh: function() {
+			axios.get( "http://localhost:3125/hosting" ).then(( res ) => {
+				this.data = res.data;
+				const node = document.getElementById( "pi-session-console" );
+				node.scrollTop = node.offsetHeight + 400;
+				timeouts = setTimeout( this.refresh, 1000 );
+			});
+		},
+	},
+	mounted () {
+		this.refresh();
+	},
+	beforeDestroy () {
+		clearTimeout( timeouts );
+	},
 };
 </script>
 

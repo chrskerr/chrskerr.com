@@ -87,49 +87,49 @@
 
 
 <script>
-import * as debounce from 'lodash/debounce'
-import ProjectNav from '../../components/ProjectNav.vue'
-import PirokuConsole from '../../components/PirokuConsole.vue'
+import * as debounce from "lodash/debounce";
+import ProjectNav from "../../components/ProjectNav.vue";
+import PirokuConsole from "../../components/PirokuConsole.vue";
 
 export default {
-  name: "piroku",
-  data() {
-    return {
-      url: "please enter a GitHub URL",
-      status: false,
-      console: false,
-      server: 'none selected',
-      npm: 'none selected',
-      response: ''
-      }
-  },
-  methods: {
-    onUrlType: debounce( function (e) {
-      if ( e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*\.git$/) ) {
-        this.status = true;
-        this.url = e.target.value;
-      } else if ( e.target.value.match(/https?:\/\/(www\.)?github\.com\/.*/) ) {
-        this.status = true;
-        this.url = e.target.value + ".git"
-      } else {
-        this.status = false;
-        this.url = "please enter a GitHub URL";
-      }
-    }, 600 ),
-    toggleStatus: function() {
-      this.console = !this.console;
-    },
-    chooseServer: function( e ) {
-      this.server = e.target.value
-    },
-    chooseNPM: function( e ) {
-      this.npm = e.target.value
-    }
-  },
-  components: {
-    'project-nav': ProjectNav,
-    'piroku-console': PirokuConsole
-  }
+	name: "piroku",
+	data() {
+		return {
+			url: "please enter a GitHub URL",
+			status: false,
+			console: false,
+			server: "none selected",
+			npm: "none selected",
+			response: "",
+		};
+	},
+	methods: {
+		onUrlType: debounce( function ( e ) {
+			if ( e.target.value.match( /https?:\/\/(www\.)?github\.com\/.*\.git$/ )) {
+				this.status = true;
+				this.url = e.target.value;
+			} else if ( e.target.value.match( /https?:\/\/(www\.)?github\.com\/.*/ )) {
+				this.status = true;
+				this.url = e.target.value + ".git";
+			} else {
+				this.status = false;
+				this.url = "please enter a GitHub URL";
+			}
+		}, 600 ),
+		toggleStatus: function() {
+			this.console = !this.console;
+		},
+		chooseServer: function( e ) {
+			this.server = e.target.value;
+		},
+		chooseNPM: function( e ) {
+			this.npm = e.target.value;
+		},
+	},
+	components: {
+		"project-nav": ProjectNav,
+		"piroku-console": PirokuConsole,
+	},
 };
 </script>
 
