@@ -10,10 +10,7 @@
 			So I switched careers to development in mid-2019, recently completing a software engineering programme with <a target="_blank" rel="noopener" href="https://generalassemb.ly/education/software-engineering-immersive/sydney">General Assembly</a>. This focussed primarily on JavaScript, Ruby, React, Rails, & Node. With a secondary focus on jQuery, Vue, GraphQL, plus exposure to much more.
 		</p>
 		<p>
-			I am currently working in a temporary assignment as a Junior Developer, working on React & Node. I work across the entire stack from databases to frontend.
-		</p>
-		<p>
-			I am now looking for a permanent role that I can commit to long term.
+			I am currently working on React & Node as a Junior Developer. I work across the entire stack from databases to frontend.
 		</p>
 	</div>
 </template>
