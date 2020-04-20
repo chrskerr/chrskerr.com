@@ -1,12 +1,13 @@
 {
   "name": "chrskerr.com",
-  "homepage": "www.chrskerr.com",
+  "homepage": "https://www.chrskerr.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 8085",
     "build": "vue-cli-service build",
-    "predeploy": "vue-cli-service build && react-snap",
+    "postbuild": "react-snap",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
