@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --port 8085",
     "build": "vue-cli-service build",
-    "predeploy": "vue-cli-service build",
+    "predeploy": "vue-cli-service build && react-snap",
     "deploy": "gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
@@ -27,11 +27,19 @@
     "eslint-plugin-vue": "^6.1.2",
     "gh-pages": "^2.2.0",
     "milligram": "^1.3.0",
+    "react-snap": "^1.23.0",
     "serialize-javascript": "^2.1.2",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
+  }
 }
