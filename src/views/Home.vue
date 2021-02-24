@@ -1,17 +1,17 @@
 <template>
 	<div class="home">
-		<p>
-			I am a software developer with over 10 years experience in IT, technology, business, commerce and sales / relationship management.
-		</p>
-		<p>
-			After leaving school, I moved into a business and relationships career. Over the years I was progressively drawn into the IT industry because of my interest in it, and took on technical sales roles. However, I continued to want to become more technical and push that skillset beyond what I could in sales.
-		</p>
-		<p>
-			So I switched careers to development in mid-2019, recently completing a software engineering programme with <a target="_blank" rel="noopener" href="https://generalassemb.ly/education/software-engineering-immersive/sydney">General Assembly</a>. This focussed primarily on JavaScript, Ruby, React, Rails, & Node. With a secondary focus on jQuery, Vue, GraphQL, plus exposure to much more.
-		</p>
-		<p>
-			I am currently working on React & Node as a Junior Developer. I work across the entire stack from databases to frontend.
-		</p>
+		<p>I am a new-ish javascript software developer with over 10 years experience in IT, technology, business, commerce and sales / relationship management.</p>
+		<p>My current professional focus is on React and Node, working in a now all-remote startup environment. I am working on external and internal facing React applications in close alignment with our graphic design team.</p>
+		<p>I have experience with React, Node, Graphql, Postgresql, Stripe, Threejs, amongst many other toolkits.</p>
+		<p>Previously, I have worked in technical sales and relationship management roles, which helps me to understand development goals from both internal stakeholder and external customer perspectives. This is invaluable to me for appropriate internal communication, and helping me to guide development for best outcomes.</p>
+		<p><strong>Outside of work I am currently:</strong></p>
+		<ul>
+			<li>Building the beta of a community driven snorkelling, freediving & scuba dive site sharing page. This is being built on React with Leaf & Three driving the mapping and beginnings of augmented reality.</li>
+			<li>Learning to mountain bike.</li>
+			<li>Teaching myself Tensorflow ML by building an automated trading bot.</li>
+			<li>Exploring Australia with my partner in a van.</li>
+			<li>And working from the road!</li>
+		</ul>
 	</div>
 </template>
 
@@ -23,6 +23,14 @@ export default {
 </script>
 
 <style scoped>
-
+	p {
+		margin-bottom: 1rem;
+	}
+	ul {
+		margin-left: 3rem;
+	}
+	li {
+		margin-bottom: 0.5rem;
+	}
 
 </style>

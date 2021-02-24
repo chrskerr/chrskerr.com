@@ -3,7 +3,7 @@
     <div id="top">
       <div id="text_container">
         <h1>Chris Kerr</h1>
-        <h2>JS Developer</h2>
+        <h2>Javascript Developer</h2>
       </div>
       <img id="headshot" src="@/assets/1.png" alt="Chris headshot" />
     </div>

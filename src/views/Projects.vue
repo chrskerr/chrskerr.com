@@ -15,7 +15,7 @@ export default {
 		"project-nav": ProjectNav,
 	},
 	beforeCreate () {
-		this.$router.push({ name: "penne-pinching" });
+		this.$router.push({ name: "jellyfish" });
 	},
 };
 </script>

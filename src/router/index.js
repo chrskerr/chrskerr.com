@@ -63,6 +63,11 @@ const routes = [
 		name: "penne-pinching",
 		component: () => import( "../views/projects/PennePinching.vue" ),
 	},
+	{
+		path: "/projects/jellyfish",
+		name: "jellyfish",
+		component: () => import( "../views/projects/Jellyfish.vue" ),
+	},
 ];
 
 const router = new VueRouter({

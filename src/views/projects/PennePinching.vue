@@ -16,10 +16,10 @@
             The page lets us log our meals, update the menu, and view analytics about our history and projections. We can see our trends and overall financial position after the purchase.
         </p>
         <p>
-            It is built using React, Hooks, Apollo GraphQL, XState, Ant Design and Firebase Auth, and is hosted on my Raspberry Pi.
+            It is built using React, Hooks, Apollo GraphQL, XState, Ant Design and Firebase Auth.
         </p>
         <p>
-            The backend is a Harsura container linked to a Postgres DB, which is serving a GraphQL interface, and is hosted on Heroku.
+            The backend is a Harsura container linked to a Postgres DB, which is serving a GraphQL interface.
         </p>
     </div>
 </template>
