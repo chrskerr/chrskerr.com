@@ -5,7 +5,7 @@
         <h1>Chris Kerr</h1>
         <h2>Javascript Developer</h2>
       </div>
-      <img id="headshot" src="@/assets/1.png" alt="Chris headshot" />
+      <img id="headshot" src="@/assets/chris.jpeg" alt="Chris headshot" />
     </div>
 
     <div id="nav">
