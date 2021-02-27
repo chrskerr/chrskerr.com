@@ -4,7 +4,7 @@
         <h3>Jellyfish: Dive Sites Site</h3>
         <ul>
             <li><a target="_blank" rel="noreferrer" href='https://staging-jellyfish.web.app/'>Link to beta site</a></li>
-            <li><a href='https://github.com/chrskerr/dive-map-website' target="_blank" rel="noreferrer">GitHub repo</a></li>
+            <li><a href='https://github.com/chrskerr/jellyfish-dive-map' target="_blank" rel="noreferrer">GitHub repo</a></li>
         </ul>
         <p>
             I've recently started travelling Australia and taking a more active interest in freediving, and realised that it's incredibly hard to work out if there are interesting dives nearby. Outside of talking to dive-shops, there doesn't appear to be a way of looking at a map and deciding where to visit based upon what it has.
