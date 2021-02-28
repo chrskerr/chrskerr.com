@@ -2,6 +2,7 @@
     <div id="nav">
         <span id='hide'>-- </span>   
         <router-link to='/projects/jellyfish'>Jellyfish</router-link><span id='hide'> | </span>
+        <router-link to='/projects/mobility'>Mobility</router-link><span id='hide'> | </span>
         <router-link to='/projects/penne-pinching'>Penne Pinching</router-link><span id='hide'> | </span>
         <router-link to='/projects/wevote'>WeVote</router-link><span id='hide'> | </span>
         <!-- <router-link to="/projects/piroku">Pi-roku, amnesiatic webhosting</router-link><span id='hide'> | </span> -->

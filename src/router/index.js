@@ -48,11 +48,11 @@ const routes = [
 		name: "projectone",
 		component: () => import( "../views/projects/ProjectOne.vue" ),
 	},
-	// {
-	// 	path: "/projects/basicflights",
-	// 	name: "basicflights",
-	// 	component: () => import( "../views/projects/BasicFlights.vue" ),
-	// },
+	{
+		path: "/projects/mobility",
+		name: "mobility",
+		component: () => import( "../views/projects/Mobility.vue" ),
+	},
 	{
 		path: "/projects/wevote",
 		name: "wevote",
