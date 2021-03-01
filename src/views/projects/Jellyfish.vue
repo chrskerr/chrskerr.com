@@ -16,7 +16,7 @@
             It is using Leafletjs for the mapping, and I am building an augmented reality dive site viewer using Threejs (very beta right now).
         </p>
         <p>
-            This is a new project under very active development so mostly doesn't work so far :)
+            This is a new project under very active development so is still considered beta :)
         </p>
     </div>
 </template>
